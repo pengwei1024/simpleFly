@@ -48,7 +48,8 @@ get_header(); ?>
 				<a class="jiathis_button_tumblr" title="分享到Tumblr"><span class="jiathis_txt jtico jtico_tumblr"></span></a>
 				<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 			</div>
-			<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script><script type="text/javascript" src="http://v3.jiathis.com/code/plugin.client.js" charset="utf-8"></script>
+			<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8">
+			</script><script type="text/javascript" src="http://v3.jiathis.com/code/plugin.client.js" charset="utf-8"></script>
 			<!-- JiaThis Button END -->
 			<?php
 			if ( comments_open() || get_comments_number() ) :
