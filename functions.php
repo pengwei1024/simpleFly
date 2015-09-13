@@ -83,8 +83,8 @@ if (!function_exists('twentyfifteen_setup')) :
 
         // This theme uses wp_nav_menu() in two locations.
         register_nav_menus(array(
-            'primary' => __('Primary Menu', 'twentyfifteen'),
-            'social' => __('Social Links Menu', 'twentyfifteen'),
+            'primary' => __('首页菜单', 'twentyfifteen'),
+            'friend-link' => __('友情链接', 'twentyfifteen'),
         ));
 
         /*
@@ -132,7 +132,7 @@ add_action('after_setup_theme', 'twentyfifteen_setup');
 function twentyfifteen_widgets_init()
 {
     register_sidebar(array(
-        'name' => __('Widget Area', 'twentyfifteen'),
+        'name' => __('所有页面', 'twentyfifteen'),
         'id' => 'sidebar-1',
         'description' => __('Add widgets here to appear in your sidebar.', 'twentyfifteen'),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -361,6 +361,7 @@ require get_template_directory() . '/inc/custom-header.php';
  */
 require get_template_directory() . '/inc/template-tags.php';
 
+
 /**
  * Customizer additions.
  *
@@ -368,13 +369,28 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
+get_template_part('./widgets/friendlink_widget');
 
 /*社交分享小工具*/
 if (function_exists('register_sidebar_widget')) {
     register_sidebar_widget('社交分享', 'getSocial');
+    register_sidebar_widget('友情链接', 'friendLink');
 }
 function getSocial()
 {
     get_template_part('./widgets/social_widget');
 }
+
+/*友情链接*/
+
+
+/*解决gravatar头像不显示*/
+function get_ssl_avatar($avatar)
+{
+    return preg_replace('/.*\/avatar\/(.*)\?s=([\d]+)&.*/', '<img src="https://secure.gravatar.com/avatar/$1?s=$2" class="avatar avatar-$2" height="$2" width="$2">', $avatar);
+}
+
+add_filter('get_avatar', 'get_ssl_avatar');
+
+
 
