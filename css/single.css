@@ -1,14 +1,31 @@
-.article-tag{
+.tag-layout {
+    border-top: 1px solid #ddd;
+    height: 50px;
+    width: 96%;
+    margin: 0 auto;
+}
+
+.tag-layout > a {
+    float: right;
+    font-size:12px;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+.article-tag {
     display: inline-block;
     background: #ff945c;
     padding: 0 5px 0px 10px;
     border-radius: 0 5px 5px 0;
     color: #fff;
-    margin-left: 10px;
     position: relative;
     height: 18px;
+    position: relative;
+    top: 6px;
+    left: 15px;
 }
-.article-tag:before{
+
+.article-tag:before {
     display: inline-block;
     content: " ";
     width: 0px;
@@ -19,23 +36,34 @@
     border: 9px solid transparent;
     border-right-color: #ff945c;
 }
-.article-tag:after{
+
+.article-tag:after {
     content: " ";
     width: 4px;
     height: 4px;
     background-color: #fff;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    -webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 7px;
     left: 2px;
 }
+
 .article-tag a {
     color: inherit;
-    font-size: 12px;
+    font-size: 10px;
     font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
-    border: 1px solid blue;
     display: inherit;
+    position: relative;
+    top: -9px;
+    padding: 0 5px;
+}
+
+.tag-icon:before {
+    color: #999;
+    content: "\f06c";
+    font: 16px FontAwesome;
+    line-height: 50px;
 }

@@ -84,7 +84,6 @@ if (!function_exists('twentyfifteen_setup')) :
         // This theme uses wp_nav_menu() in two locations.
         register_nav_menus(array(
             'primary' => __('首页菜单', 'twentyfifteen'),
-            'friend-link' => __('友情链接', 'twentyfifteen'),
         ));
 
         /*
@@ -132,9 +131,18 @@ add_action('after_setup_theme', 'twentyfifteen_setup');
 function twentyfifteen_widgets_init()
 {
     register_sidebar(array(
-        'name' => __('所有页面', 'twentyfifteen'),
+        'name' => __('首页', 'twentyfifteen'),
         'id' => 'sidebar-1',
-        'description' => __('Add widgets here to appear in your sidebar.', 'twentyfifteen'),
+        'description' => __('增加控件到首页', 'twentyfifteen'),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+    register_sidebar(array(
+        'name' => __('其他页面', 'twentyfifteen'),
+        'id' => 'sidebar-2',
+        'description' => __('增加控件到除首页外的其他页面', 'twentyfifteen'),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
         'before_title' => '<h2 class="widget-title">',
@@ -369,28 +377,21 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
-get_template_part('./widgets/friendlink_widget');
+// 导入友情链接小工具
+require get_template_directory() . '/widgets/friendlink_widget.php';
+
+// 解决avatar头像
+require get_template_directory() . '/widgets/avatar_widget.php';
 
 /*社交分享小工具*/
 if (function_exists('register_sidebar_widget')) {
     register_sidebar_widget('社交分享', 'getSocial');
-    register_sidebar_widget('友情链接', 'friendLink');
 }
 function getSocial()
 {
     get_template_part('./widgets/social_widget');
 }
 
-/*友情链接*/
-
-
-/*解决gravatar头像不显示*/
-function get_ssl_avatar($avatar)
-{
-    return preg_replace('/.*\/avatar\/(.*)\?s=([\d]+)&.*/', '<img src="https://secure.gravatar.com/avatar/$1?s=$2" class="avatar avatar-$2" height="$2" width="$2">', $avatar);
-}
-
-add_filter('get_avatar', 'get_ssl_avatar');
 
 
 

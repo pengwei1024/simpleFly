@@ -57,6 +57,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * work of Eric Meyer, Nicolas Gallagher, Jonathan Neal, and Blueprint.
  */
 
+@font-face {
+    font-family: 'FontAwesome';
+    src: url("fonts/fontawesome-webfont.eot");
+    src: url("fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff") format("woff"), url("fonts/fontawesome-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
     border: 0;
     font-family: inherit;
@@ -4089,6 +4097,7 @@ p > video {
         border: 5px solid #fff;
         position: relative;
         top: -5rem;
+        cursor: pointer;
     }
 
     body {
@@ -5994,16 +6003,18 @@ p > video {
     }
 }
 
-#menu-nav{
+#menu-nav {
     text-align: center;
     font-size: 14px;
     margin: -20px 0;
     font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
-#page{
+
+#page {
     position: relative;
 }
-.site-footer{
+
+.site-footer {
     margin-left: 24.4118%;
     width: 75.5882%;
     margin-top: 4rem;
@@ -6011,7 +6022,8 @@ p > video {
     background-color: #f7f7f7;
 
 }
-.site-footer>.site-info{
+
+.site-footer > .site-info {
     text-align: center;
     font-size: 12px;
     font-family: "Noto Sans", sans-serif;

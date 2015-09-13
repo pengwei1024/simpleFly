@@ -27,7 +27,7 @@
 
 	<div id="sidebar" class="sidebar">
 		<div class="overlay"></div>
-		<img class="profile-pic" onclick="location.href='<?php echo esc_url( home_url( '/' ) ); ?>'"
+		<img class="profile-pic" onclick="location.href='<?php echo esc_url(home_url( '/' )); ?>'"
 			 src="http://7q5ccl.com1.z0.glb.clouddn.com/mio454_tDplDqU4T4PLQ4jQpFIy_square.jpg"/>
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding">
