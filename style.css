@@ -47,7 +47,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
  *    16.5 - Desktop Medium
  *    16.6 - Desktop Large
  *    16.7 - Desktop X-Large
+ *    16.8 - Not Desktop
+ *    16.9 - Table Size
  * 17.0 - Print
+ * 18.0 - 其他样式
  */
 
 /**
@@ -5845,6 +5848,35 @@ p > video {
 }
 
 /**
+ * 16.8 Not Desktop
+ */
+@media screen and (max-width: 59.6875em){
+    .profile-pic{
+        display: none;
+    }
+    .site-footer{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+}
+
+/**
+ * 16.9 Table Size
+ */
+@media screen and (max-width: 59.6875em) and (min-width: 38.75em){
+    .site-content{
+
+    }
+    .site-main {
+        padding: 1.3333% 0;
+    }
+    .site-main article{
+        width: 96%;
+        margin: 0 auto;
+    }
+}
+
+/**
  * 17.0 Print
  */
 
@@ -6003,6 +6035,12 @@ p > video {
     }
 }
 
+
+
+/**
+ * 18.0 其他样式
+ */
+
 #menu-nav {
     text-align: center;
     font-size: 14px;
@@ -6046,3 +6084,5 @@ p > video {
     background-position: 0 -52px;
     opacity: 1;
 }
+
+

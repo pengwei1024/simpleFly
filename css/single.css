@@ -54,7 +54,7 @@
 .article-tag a {
     color: inherit;
     font-size: 10px;
-    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+    font-family: Menlo, Monaco,"Microsoft YaHei", "Andale Mono", "lucida console", "Courier New", monospace;
     display: inherit;
     position: relative;
     top: -9px;
