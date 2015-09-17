@@ -380,17 +380,14 @@ require get_template_directory() . '/inc/customizer.php';
 // 导入友情链接小工具
 require get_template_directory() . '/widgets/friendlink_widget.php';
 
+/*社交分享小工具*/
+require get_template_directory() . '/widgets/social_widget.php';
+
 // 解决avatar头像
 require get_template_directory() . '/widgets/avatar_widget.php';
 
-/*社交分享小工具*/
-if (function_exists('register_sidebar_widget')) {
-    register_sidebar_widget('社交分享', 'getSocial');
-}
-function getSocial()
-{
-    get_template_part('./widgets/social_widget');
-}
+
+
 
 
 
