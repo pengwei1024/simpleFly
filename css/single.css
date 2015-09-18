@@ -72,5 +72,24 @@
 }
 .pn_post_link{
     font-size: 14px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
+.pn_post_link a{
+    display: inline-block;
+    width: 50%;
+    overflow: hidden;
+}
+.pn_post_link a:nth-child(2){
+    float: right;
+    text-align: right;
+}
+/*@media screen and (max-width: 38.75em){
+    .pn_post_link a{
+        width: 100%;
+        display: block;
+    }
+    .pn_post_link a:last-child{
+        float: none;
+        text-align: left;
+    }
+}*/
