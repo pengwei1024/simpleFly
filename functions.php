@@ -25,6 +25,8 @@
  * @since Twenty Fifteen 1.0
  */
 
+require ('theme-options.php');
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  *

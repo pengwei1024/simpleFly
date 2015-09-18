@@ -1,0 +1,27 @@
+#main-table{
+
+}
+#main-table tr td:first-child{
+    min-width: 100px;
+    text-align: center;
+}
+
+#main-table textarea{
+    min-width: 400px;
+    min-height: 80px;
+}
+
+#main-table table tr td{
+    font-size: 14px;
+}
+
+#main-table input[type='text']{
+    width: 100%;
+}
+#main-table button[type='submit']{
+    margin: 10px;
+}
+
+#message{
+    margin-left: 0px;
+}
