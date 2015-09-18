@@ -386,6 +386,9 @@ require get_template_directory() . '/widgets/social_widget.php';
 // 解决avatar头像
 require get_template_directory() . '/widgets/avatar_widget.php';
 
+// 解决google font
+require get_template_directory() . '/widgets/disable_google_fonts.php';
+
 
 
 

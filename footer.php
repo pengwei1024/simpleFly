@@ -12,7 +12,7 @@
 </div><!-- .site-content -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			Power By WordPress & all-in<br/>
+			Power By WordPress & <a href="https://github.com/pengwei1024/simpleFly" target="_blank">simpleFly</a> <br/>
 			CopyRight © 2013 - 2015 舞影凌风 All Rights Reserved
 		</div><!-- .site-info -->
 	</footer><!-- .site-footer -->

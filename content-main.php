@@ -45,11 +45,15 @@
         get_template_part('author-bio');
     endif;
     ?>
-    <div class="tag-layout">
+    <!--<div class="tag-layout">
         <?php
-        the_tags('<span class="tag-icon"></span><div class="article-tag">', '', '</div>');
-        ?>
-        <a href="<?php the_permalink(); ?>">阅读全文></a>
-    </div>
+/*        the_tags('<span class="tag-icon"></span><div class="article-tag">', '', '</div>');
+        */?>
+        <a href="<?php /*the_permalink(); */?>">阅读全文></a>
+    </div>-->
+    <footer class="entry-footer">
+        <?php twentyfifteen_entry_meta(); ?>
+        <?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
+    </footer>
 
 </article><!-- #post-## -->
