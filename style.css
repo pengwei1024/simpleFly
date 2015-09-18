@@ -4343,11 +4343,13 @@ p > video {
         font-size: 22px;
         font-size: 2.2rem;
         line-height: 1.3636;
+        text-align: center;
     }
 
     .site-description {
         font-size: 12px;
         font-size: 1.2rem;
+        text-align: center;
     }
 
     .widget {
@@ -4455,7 +4457,8 @@ p > video {
     .hentry + .hentry,
     .page-header + .hentry,
     .page-header + .page-content {
-        margin-top: 8.3333%;
+        /*margin-top: 8.3333%;*/
+        margin-top: 5.3333%;
     }
 
     .post-thumbnail {
@@ -5877,6 +5880,11 @@ p > video {
         width: 96%;
         margin: 0 auto;
     }
+
+    .page-header {
+        width: 95%;
+        margin: 10px auto 0;
+    }
 }
 
 /**
@@ -6093,6 +6101,10 @@ p > video {
 .back-to-top:hover {
     background-position: 0 -52px;
     opacity: 1;
+}
+
+.page-header{
+    border-left-color: rgba(0,0,0,0.6);;
 }
 
 
