@@ -103,7 +103,7 @@ class WP_Widget_Social extends WP_Widget{
         <?php
     }
 
-    public function __construct($id_base, $name, $widget_options = array(), $control_options = array())
+    public function __construct()
     {
         $widget_ops = array('classname'=>'widget_social','description'=>'社交分享');
         parent::__construct(false,'社交分享',$widget_ops);
@@ -111,4 +111,3 @@ class WP_Widget_Social extends WP_Widget{
 
 }
 ?>
-

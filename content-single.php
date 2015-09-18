@@ -9,7 +9,7 @@
  * @since Twenty Fifteen 1.0
  */
 ?>
-
+<link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/single.css"/>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php
     // Post thumbnail.

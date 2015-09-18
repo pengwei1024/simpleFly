@@ -6,9 +6,7 @@
  * @subpackage Twenty_Fifteen
  * @since Twenty Fifteen 1.0
  */
-
 get_header(); ?>
-<link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/single.css"/>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		<?php
