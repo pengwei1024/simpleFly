@@ -67,3 +67,10 @@
     font: 16px FontAwesome;
     line-height: 50px;
 }
+#comment-area{
+    padding: 0 20px 20px;
+}
+.pn_post_link{
+    font-size: 14px;
+    margin-bottom: 5px;
+}

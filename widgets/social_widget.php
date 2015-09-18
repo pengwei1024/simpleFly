@@ -19,29 +19,48 @@ class WP_Widget_Social extends WP_Widget{
             .social {
                 text-align: center;
                 margin-bottom: 25px;
+                margin-top: -2rem;
             }
             .social > a {
                 display: inline-block;
-                width: 32px;
-                height: 32px;
-                border-radius: 32px;
+                width: 34px;
+                height: 34px;
+                border-radius: 34px;
                 margin: 0 10px;
+                opacity: 0.7;
+                outline: none;
+            }
+
+            .social > a:hover{
+                opacity: 1;
             }
 
             .social > .github {
                 background: url("<?php bloginfo('template_directory'); ?>/images/github.png") center #000000 no-repeat;
             }
+            .social > .github:hover{
+                border: 1px solid #909ab6;
+            }
 
             .social > .weibo {
                 background: url("<?php bloginfo('template_directory'); ?>/images/weibo.png") center #fa7d3c no-repeat;
+            }
+            .social > .weibo:hover{
+                border: 1px solid #da7d3c;
             }
 
             .social > .rss {
                 background: url("<?php bloginfo('template_directory'); ?>/images/rss.png") center #cf5d0f no-repeat;
             }
+            .social > .rss:hover{
+                border: 1px solid #ff5d0f;
+            }
 
             .social > .email {
                 background: url("<?php bloginfo('template_directory'); ?>/images/mail.png") center #0078d8 no-repeat;
+            }
+            .social > .email:hover{
+                border: 1px solid #0078d8;
             }
         </style>
         <!--社交平台-->

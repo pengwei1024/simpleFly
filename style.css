@@ -5850,11 +5850,12 @@ p > video {
 /**
  * 16.8 Not Desktop
  */
-@media screen and (max-width: 59.6875em){
-    .profile-pic{
+@media screen and (max-width: 59.6875em) {
+    .profile-pic {
         display: none;
     }
-    .site-footer{
+
+    .site-footer {
         width: 100% !important;
         margin: 0 !important;
     }
@@ -5863,14 +5864,16 @@ p > video {
 /**
  * 16.9 Table Size
  */
-@media screen and (max-width: 59.6875em) and (min-width: 38.75em){
-    .site-content{
+@media screen and (max-width: 59.6875em) and (min-width: 38.75em) {
+    .site-content {
 
     }
+
     .site-main {
         padding: 1.3333% 0;
     }
-    .site-main article{
+
+    .site-main article {
         width: 96%;
         margin: 0 auto;
     }
@@ -6035,8 +6038,6 @@ p > video {
     }
 }
 
-
-
 /**
  * 18.0 其他样式
  */
@@ -6065,6 +6066,15 @@ p > video {
     text-align: center;
     font-size: 12px;
     font-family: "Noto Sans", sans-serif;
+}
+
+#site-navigation {
+    margin-top: -2rem;
+}
+
+#site-navigation ul li a {
+    text-align: center;
+    padding-right: 0;
 }
 
 .back-to-top {
