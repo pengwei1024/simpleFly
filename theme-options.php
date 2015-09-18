@@ -23,7 +23,8 @@ $settingOptions = array(
  */
 function getValue($id, $default = null)
 {
-    if (!empty(get_option($id))) {
+    $options = get_option($id);
+    if (!empty($options)) {
         return get_option($id);
     } else {
         return isset($default) ? $default : "";

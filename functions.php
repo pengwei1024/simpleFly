@@ -409,8 +409,8 @@ class MyOptions
     function getHeadUrl()
     {
         $default = get_template_directory_uri() . "/images/profile-default.png";
-        return !empty($this->getOptions("simpleFly_head_url")) ? $this->getOptions("simpleFly_head_url")
-            : $default;
+        $headOption = $this->getOptions("simpleFly_head_url");
+        return (!empty($headOption)) ? $headOption : $default;
     }
 
     /**
