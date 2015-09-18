@@ -37,7 +37,7 @@ function theme_option()
         if (isset($_REQUEST['saved'])) {
             foreach ($settingOptions as $value) {
                 if (isset($_REQUEST[$value['id']])) {
-                    update_option($value['id'], $_REQUEST[$value['id']]);
+                    update_option($value['id'], stripslashes($_REQUEST[$value['id']]));
                 } else {
                     delete_option($value['id']);
                 }
@@ -45,7 +45,7 @@ function theme_option()
         } else if (isset($_REQUEST['reset'])) {
             foreach ($settingOptions as $value) {
                 delete_option($value['id']);
-                update_option($value['id'], $value['std']);
+                update_option($value['id'], $value['default']);
             }
         }
     }

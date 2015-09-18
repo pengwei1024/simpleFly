@@ -25,7 +25,7 @@
  * @since Twenty Fifteen 1.0
  */
 
-require ('theme-options.php');
+require('theme-options.php');
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -390,6 +390,58 @@ require get_template_directory() . '/widgets/avatar_widget.php';
 
 // 解决google font
 require get_template_directory() . '/widgets/disable_google_fonts.php';
+
+
+/**
+ * 获取自定义参数
+ * Class MyOptions
+ */
+class MyOptions
+{
+    function __construct()
+    {
+
+    }
+
+    /**
+     * 获取头像
+     */
+    function getHeadUrl()
+    {
+        $default = get_template_directory_uri() . "/images/profile-default.png";
+        return !empty($this->getOptions("simpleFly_head_url")) ? $this->getOptions("simpleFly_head_url")
+            : $default;
+    }
+
+    /**
+     * 获取统计代码
+     * @return mixed|void
+     */
+    function getStatisticsCode()
+    {
+        echo $this->getOptions("simpleFly_statistics_text");
+    }
+
+    /**
+     * 获取页脚显示文字
+     * @return mixed|void
+     */
+    function getFooter()
+    {
+        echo $this->getOptions("simpleFly_footer_text");
+    }
+
+    /**
+     * 获取自定义参数
+     * @param $key
+     * @return mixed|void
+     */
+    private function getOptions($key)
+    {
+        return get_option($key);
+    }
+
+}
 
 
 

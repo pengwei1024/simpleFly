@@ -8,6 +8,7 @@
  * @subpackage Twenty_Fifteen
  * @since Twenty Fifteen 1.0
  */
+$myOptions = new MyOptions();
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
@@ -18,7 +19,9 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
-	<?php wp_head(); ?>
+	<?php wp_head();
+	$myOptions->getStatisticsCode();
+	?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -28,7 +31,7 @@
 	<div id="sidebar" class="sidebar">
 		<div class="overlay"></div>
 		<img class="profile-pic" onclick="location.href='<?php echo esc_url(home_url( '/' )); ?>'"
-			 src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/profile-default.png"/>
+			 src="<?php echo $myOptions->getHeadUrl(); ?>"/>
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding">
 				<?php
