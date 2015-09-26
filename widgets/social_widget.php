@@ -65,10 +65,10 @@ class WP_Widget_Social extends WP_Widget{
         </style>
         <!--社交平台-->
         <div class="social">
-            <a class="github" target="_blank" href="https://github.com/pengwei1024" title="github"></a>
-            <a class="weibo" target="_blank" href="http://weibo.com/2631836861" title="weibo"></a>
-            <a class="rss" target="_blank" href="/feed/" title="rss"></a>
-            <a class="email" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=pengwei1024@gmail.com"
+            <a class="github" rel="nofollow" target="_blank" href="https://github.com/pengwei1024" title="github"></a>
+            <a class="weibo" rel="nofollow" target="_blank" href="http://weibo.com/2631836861" title="weibo"></a>
+            <a class="rss" rel="nofollow" target="_blank" href="/feed/" title="rss"></a>
+            <a class="email" rel="nofollow" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=pengwei1024@gmail.com"
                title="email"></a>
         </div>
         <?php
