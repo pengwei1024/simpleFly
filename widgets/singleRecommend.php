@@ -18,13 +18,15 @@
         padding: 3px 10px;
         font-weight: bold;
         display: inline-block;
+        font-size: 14px;
     }
     #tags_related{
         list-style-type: none;
         margin: 10px 0 10px 0;
     }
-    #tags_related li a{
+    #tags_related li{
         color: #667ebd;
+        font-size: 13px;
         line-height: 27px;
     }
 </style>

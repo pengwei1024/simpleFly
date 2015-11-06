@@ -4041,6 +4041,11 @@ p > video {
  */
 
 @media screen and (min-width: 59.6875em) {
+    .widget {
+        padding-left: 2.3em !important;
+        padding-right: 2.3em !important;
+    }
+
     body:before {
         background-color: #fff;
         box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
@@ -6105,8 +6110,8 @@ p > video {
     opacity: 1;
 }
 
-.page-header{
-    border-left-color: rgba(0,0,0,0.6);;
+.page-header {
+    border-left-color: rgba(0, 0, 0, 0.6);;
 }
 
 
