@@ -13,19 +13,18 @@
         margin-top: 30px;
     }
     .related_about span {
-        border-bottom: 3px solid #32a5e7;
-        color: #32a5e7;
+        border-bottom: 3px solid #666;
+        color: #666;
         padding: 3px 10px;
         font-weight: bold;
         display: inline-block;
         font-size: 14px;
     }
     #tags_related{
-        list-style-type: none;
         margin: 10px 0 10px 0;
     }
     #tags_related li{
-        color: #667ebd;
+        color: #666;
         font-size: 13px;
         line-height: 27px;
     }
